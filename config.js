@@ -111,7 +111,7 @@ global.thumbnailUrl = [
 global.sig = 'https://instagram.com/maulana_yusuf.id'
 global.sgh = 'https://github.com/nisabot'
 global.sgc = 'https://chat.whatsapp.com/D2UYbSKkj0PCmy0nG0mYCd'
-global.sdc = 'https://saweria.co/owneryusuf'
+global.sdc = 'https://www.facebook.com/maulanayusuf001'
 global.snh = 'https://194.233.66.232/'
 
 /*============== HENTAI ==============*/ 
@@ -379,23 +379,23 @@ global.wait = 'Wait...'
 global.render = 'Render...'
 global.webs = 'https://s.id/Cerdasin62/'//Your Website
 global.logo = "https://i.pinimg.com/564x/f7/d2/e4/f7d2e48fd59a8c01cd396bfc70b0a2d1.jpg"//Your logo
-global.gcwangsaf = "https://chat.whatsapp.com/I2cagI7uWN59oxMomPQvfM"//Link Group whatsapp
+global.gcwangsaf = "https://chat.whatsapp.com/D2UYbSKkj0PCmy0nG0mYCd"//Link Group whatsapp
 
 /*============== PAYMENT ==============*/
-global.saweria = "https://saweria.co/wudysoft"// website saweria.co
-global.dana = ["0887435373103"]
-global.pulsa = ["082195322106"]//pulsa here
-global.trakteer = "https://trakteer.id/wudysoft"//Link url https://
-global.paypal = "wudysoft@gmail.com"//paypal email
+global.saweria = "https://saweria.co/owneryusuf"// website saweria.co
+global.dana = ["081387089252"]
+global.pulsa = ["081387089252"]//pulsa here
+global.trakteer = "https://trakteer.id/botannisa"//Link url https://
+global.paypal = ""//paypal email
 global.gopay = "082195322106"//Numver for Payment digital Gopay Gojek
 
 /*============== PAYMENT ==============*/
-global.pdana = '0887435373103'
-global.povo = '082195322106'
-global.pgopay = '082195322106'
-global.ppulsa = '082195322106'
-global.ppulsa2 = '082195322106'
-global.psaweria = 'https://saweria.com/Wudysoft'
+global.pdana = '081387089252'
+global.povo = '083199789390'
+global.pgopay = '083199789390'
+global.ppulsa = '081387089252'
+global.ppulsa2 = '083199789390'
+global.psaweria = 'https://saweria.co/owneryusuf'
 
 //Rpg
 global.rpg = {

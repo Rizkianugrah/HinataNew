@@ -110,7 +110,7 @@ global.thumbnailUrl = [
 /*============== SOCIAL ==============*/
 global.sig = 'https://instagram.com/maulana_yusuf.id'
 global.sgh = 'https://github.com/nisabot'
-global.sgc = 'https://chat.whatsapp.com/D2UYbSKkj0PCmy0nG0mYCd'
+global.sgc = 'https://chat.whatsapp.com/CWvL3sXIBPV1urCTauDTPZ'
 global.sdc = 'https://www.facebook.com/maulanayusuf001'
 global.snh = 'https://194.233.66.232/'
 

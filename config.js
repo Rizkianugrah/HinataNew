@@ -18,8 +18,8 @@ global.owner = [
   ['6281387089252', '️Oᴡɴᴇʀ Teen ᴴ ᴵ ᴺ ᴬ ᵀ ᴬ ⁻ ᴹ ᴰ', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
-global.mods = [] // Want some help?
-global.prems = [] // Premium user has unlimited limit
+global.mods = ['6281387089252'] // Want some help?
+global.prems = ['6281387089252'] // Premium user has unlimited limit
 global.girlfren = [] // Your gf/pacar
 
 //Api website
@@ -379,18 +379,18 @@ global.wait = 'Wait...'
 global.render = 'Render...'
 global.webs = 'https://s.id/Cerdasin62/'//Your Website
 global.logo = "https://i.pinimg.com/564x/f7/d2/e4/f7d2e48fd59a8c01cd396bfc70b0a2d1.jpg"//Your logo
-global.gcwangsaf = "https://chat.whatsapp.com/D2UYbSKkj0PCmy0nG0mYCd"//Link Group whatsapp
+global.gcwangsaf = "https://chat.whatsapp.com/CWvL3sXIBPV1urCTauDTPZ"//Link Group whatsapp
 
 /*============== PAYMENT ==============*/
 global.saweria = "https://saweria.co/owneryusuf"// website saweria.co
-global.dana = ["081387089252"]
+global.dana = ["0895622463636"]
 global.pulsa = ["081387089252"]//pulsa here
 global.trakteer = "https://trakteer.id/botannisa"//Link url https://
 global.paypal = ""//paypal email
-global.gopay = "082195322106"//Numver for Payment digital Gopay Gojek
+global.gopay = "083199789390"//Numver for Payment digital Gopay Gojek
 
 /*============== PAYMENT ==============*/
-global.pdana = '081387089252'
+global.pdana = '0895622463636'
 global.povo = '083199789390'
 global.pgopay = '083199789390'
 global.ppulsa = '081387089252'

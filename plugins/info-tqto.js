@@ -48,8 +48,8 @@ https://github.com/Ameliascrf
 *Fokus ID:*
 https://github.com/Fokusdotid
 
-*AmmarBN:*
-https://github.com/AmmarrBN
+*Annisa:*
+https://github.com/nisabot
 `
 conn.reply(m.chat, tqto, m, { contextInfo: { externalAdReply: {
             title: `${htjava} ${wm}`,

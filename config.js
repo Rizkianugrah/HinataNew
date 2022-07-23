@@ -18,8 +18,8 @@ global.owner = [
   ['6281387089252', '️Oᴡɴᴇʀ Teen ᴴ ᴵ ᴺ ᴬ ᵀ ᴬ ⁻ ᴹ ᴰ', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
-global.mods = [] // Want some help?
-global.prems = [] // Premium user has unlimited limit
+global.mods = ["6281387089252"] // Want some help?
+global.prems = ["6281387089252"] // Premium user has unlimited limit
 global.girlfren = [] // Your gf/pacar
 
 //Api website

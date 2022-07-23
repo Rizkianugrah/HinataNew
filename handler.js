@@ -720,7 +720,7 @@ export async function handler(chatUpdate) {
                 if (!('autoread' in settings)) settings.autoread = true
                 if (!('restrict' in settings)) settings.restrict = true
                 if (!'jadibot' in settings) settings.jadibot = true
-                if (!('autorestart' in settings)) settings.autorestart = true
+                if (!('autorestart' in settings)) settings.autorestart = false
                 if (!('restartDB' in settings)) settings.restartDB = 0
              
             } else global.db.data.settings[this.user.jid] = {
@@ -728,7 +728,7 @@ export async function handler(chatUpdate) {
                 autoread: true,
                 jadibot: true,
                 restrict: true,
-                autorestart: true,
+                autorestart: false,
                 restartDB: 0
             }
         } catch (e) {
@@ -1182,24 +1182,52 @@ export async function deleteUpdate(message) {
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
         console.error(e)
-    }
+       }
 }
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '*AKSES DITOLAK*\nPerintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
-        owner: '*AKSES DITOLAK*\nPerintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
-        mods: '*AKSES DITOLAK*\nPerintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-        premium: '*AKSES DITOLAK*\nPerintah ini hanya untuk member _*Premium*_ !',
-        group: '*AKSES DITOLAK*\nPerintah ini hanya dapat digunakan di grup!',
-        private: '*AKSES DITOLAK*\nPerintah ini hanya dapat digunakan di Chat Pribadi!',
-        admin: '*AKSES DITOLAK*\nPerintah ini hanya untuk *Admin* grup!',
-        botAdmin: '*AKSES DITOLAK*\nJadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-        unreg: '*AKSES DITOLAK*\nSilahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
-        restrict: 'Fitur ini di *disable*!'
+    rowner: `╭─֍〔 ıll *OWNER* llı 〕֍─
+⬡ Perintah ini hanya untuk *pemilik bot*
+╰─────────────────֍`,
+    owner: `╭─֍〔 ıll *OWNER* llı 〕֍─
+⬡ Perintah ini hanya untuk *pemilik bot*
+╰─────────────────֍`,
+    mods: `╭─֍〔 ıll *OWNER* llı 〕֍─
+⬡ Perintah ini hanya untuk *pemilik bot*
+╰─────────────────֍`,
+    premium: `╭─֍〔 ıll *PREMIUM* llı 〕֍─
+⬡ Fitur ini hanya tersedia untuk user *Premium*
+╰─────────────────֍`,
+    group: `╭─֍〔 ıll *GROUP* llı 〕֍─
+⬡ Fitur ini hanya dapat digunakan didalam grup!!
+╰─────────────────֍`,
+    private: `╭─֍〔 ıll *PRIVATE* llı 〕֍─
+⬡ Fitur ini hanya dapat digunakan diprivate chat
+╰─────────────────֍`,
+    admin: `╭─֍〔 ıll *ADMIN GROUP* llı 〕֍─
+⬡ Fitur ini hanya tersedia untuk admin grup!!
+╰─────────────────֍`,
+    botAdmin: `╭─֍〔 ıll *WARNING* llı 〕֍─
+⬡ Fitur ini tidak dapat work, bot tidak menjadi admin
+╰─────────────────֍`,
+    restrict: 'Fitur ini di *disable*!',
     }[type]
-    if (msg) return conn.sendHydrated2(m.chat, msg, author, `${logo}`, `${webs}`, "Website", `${gcwangsaf}`, "GROUP WHATSAPP", [["Owner", ".donasi"]], m)
-}
+  if (msg) return conn.sendBut(m.chat, msg, '📮 Silahkan pilih menu dibawah ini', 'Menu', '.menu', m)
+ let unreg = {
+  unreg: `
+┏━━━〔 ıll 𝐔𝐍𝐑𝐄𝐆𝐈𝐒𝐓𝐄𝐑 llı 〕━━㉿
+⬡ Hallo mypren👋, @${m.sender.split`@`[0]}
+⬡ Sebelum melihat fitur bot, lebih baik register dulu
+⬡ Kalau tidak kelihatan button nya, contohnya dibawah!
+┗━━━━━━━━━━━━━━━━━━㉿
+┏━━〔 ıll CONTOH llı 〕━㉿
+⬡ #daftar namamu.umurmu
+⬡ #daftar @${m.sender.split`@`[0]}.18
+┗━━━━━━━━━━㉿ `
+  }[type]
+ if (unreg) return conn.sendBut(m.chat, unreg, '📮 Silahkan Klik reg dibawah ini', 'Register', `.daftar @${m.sender.split`@`[0]}.18`, m)
+ }
 
 let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {

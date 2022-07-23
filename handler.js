@@ -720,7 +720,7 @@ export async function handler(chatUpdate) {
                 if (!('autoread' in settings)) settings.autoread = true
                 if (!('restrict' in settings)) settings.restrict = true
                 if (!'jadibot' in settings) settings.jadibot = true
-                if (!('autorestart' in settings)) settings.autorestart = false
+                if (!('autorestart' in settings)) settings.autorestart = true
                 if (!('restartDB' in settings)) settings.restartDB = 0
              
             } else global.db.data.settings[this.user.jid] = {
@@ -728,7 +728,7 @@ export async function handler(chatUpdate) {
                 autoread: true,
                 jadibot: true,
                 restrict: true,
-                autorestart: false,
+                autorestart: true,
                 restartDB: 0
             }
         } catch (e) {
